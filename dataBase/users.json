@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Misha",
+    "age": 11
+  },
+  {
+    "id": 2,
+    "name": "Valentun",
+    "age": 40
+  },
+  {
+    "id": 3,
+    "name": "Myroslav",
+    "age": 37
+  },
+  {
+    "id": 4,
+    "name": "Igor",
+    "age": 37
+  },
+  {
+    "id": 5,
+    "name": "Mariya",
+    "age": 34
+  },
+  {
+    "id": 6,
+    "name": "Olga",
+    "age": 33
+  },
+  {
+    "id": 8,
+    "name": "Rita",
+    "age": 35
+  }
+]
