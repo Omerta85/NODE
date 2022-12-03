@@ -1,8 +1,8 @@
 const express = require('express');
-const mongoose =  require('mongoose');
+const mongoose = require('mongoose');
 require('dotenv').config()
 
-const {userRouter, carRouter, authRouter} = require('./router');
+const { userRouter, carRouter } = require('./router');
 const configs = require('./config/config');
 
 const app = express();
@@ -10,7 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/auth', authRouter);
 app.use('/users', userRouter);
 app.use('/cars', carRouter);
 
@@ -28,5 +27,4 @@ app.use((err, req, res, next) => {
 app.listen(configs.PORT, async () => {
     console.log(`Server listen ${configs.PORT}`);
     await mongoose.connect(configs.MONGO_URL);
-
 });
